@@ -11,6 +11,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
+import android.widget.RelativeLayout
 import android.widget.TextView
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.Observer
@@ -28,7 +29,6 @@ class HomeFragment : Fragment() {
 
     val URL_YOUTUBE :String = "https://www.youtube.com/watch?v="
 
-    lateinit var textView: TextView
     lateinit var boton: Button
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
@@ -37,7 +37,6 @@ class HomeFragment : Fragment() {
 
         homeViewModel = ViewModelProviders.of(this).get(HomeViewModel::class.java)
         val root = inflater.inflate(R.layout.fragment_home, container, false)
-        textView = root.findViewById(R.id.text_home)
 
         boton = root.findViewById(R.id.button_id)
 
@@ -83,7 +82,6 @@ class HomeFragment : Fragment() {
             REQ_CODE_SPEECH_INPUT ->
                 if(resultCode==RESULT_OK && data!=null) {
                     val resultado: ArrayList<String> =  data.getStringArrayListExtra(RecognizerIntent.EXTRA_RESULTS)
-                    textView.text = resultado.get(0)
 
                     homeViewModel.getSearch(resultado.get(0)).observe(this, Observer<SearchResponse?>{t ->
                         Log.i("RESST ", t!!.items[0].id.videoId)

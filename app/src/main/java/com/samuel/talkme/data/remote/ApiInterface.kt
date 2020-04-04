@@ -1,6 +1,6 @@
-package com.example.talkme.data.remote
+package com.samuel.talkme.data.remote
 
-import com.example.talkme.data.model.SearchResponse
+import com.samuel.talkme.data.model.SearchResponse
 import retrofit2.Call
 import retrofit2.http.GET
 import retrofit2.http.Query

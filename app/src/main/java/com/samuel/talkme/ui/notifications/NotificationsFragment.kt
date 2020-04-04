@@ -1,7 +1,6 @@
-package com.example.talkme.ui.notifications
+package com.samuel.talkme.ui.notifications
 
 import android.os.Bundle
-import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -9,9 +8,9 @@ import android.widget.TextView
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProviders
-import com.example.talkme.R
-import com.example.talkme.data.DataManager
-import com.example.talkme.data.model.SearchResponse
+import com.samuel.talkme.R
+import com.samuel.talkme.data.DataManager
+import com.samuel.talkme.data.model.SearchResponse
 
 class NotificationsFragment : Fragment() {
 

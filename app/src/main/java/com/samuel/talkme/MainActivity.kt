@@ -1,4 +1,4 @@
-package com.example.talkme
+package com.samuel.talkme
 
 import android.os.Bundle
 import com.google.android.material.bottomnavigation.BottomNavigationView

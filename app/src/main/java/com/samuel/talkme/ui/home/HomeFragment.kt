@@ -1,4 +1,4 @@
-package com.example.talkme.ui.home
+package com.samuel.talkme.ui.home
 
 import android.app.Activity.RESULT_OK
 import android.content.ActivityNotFoundException
@@ -15,8 +15,8 @@ import android.widget.TextView
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProviders
-import com.example.talkme.R
-import com.example.talkme.data.model.SearchResponse
+import com.samuel.talkme.R
+import com.samuel.talkme.data.model.SearchResponse
 import java.util.*
 import kotlin.collections.ArrayList
 

@@ -1,10 +1,10 @@
-package com.example.talkme.data
+package com.samuel.talkme.data
 
 import androidx.lifecycle.MutableLiveData
-import com.example.talkme.BuildConfig
-import com.example.talkme.data.model.SearchResponse
-import com.example.talkme.data.remote.ApiAdapter
-import com.example.talkme.data.remote.ApiInterface
+import com.samuel.talkme.BuildConfig
+import com.samuel.talkme.data.model.SearchResponse
+import com.samuel.talkme.data.remote.ApiAdapter
+import com.samuel.talkme.data.remote.ApiInterface
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response

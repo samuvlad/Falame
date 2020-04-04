@@ -1,14 +1,10 @@
-package com.example.talkme.ui.home
+package com.samuel.talkme.ui.home
 
-import android.util.Log
-import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 
 import androidx.lifecycle.ViewModel
-import com.example.talkme.data.DataManager
-import com.example.talkme.data.model.SearchResponse
-import retrofit2.Call
-import retrofit2.Response
+import com.samuel.talkme.data.DataManager
+import com.samuel.talkme.data.model.SearchResponse
 
 class HomeViewModel :  ViewModel(){
 

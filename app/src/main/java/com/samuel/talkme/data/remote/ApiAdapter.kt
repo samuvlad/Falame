@@ -1,4 +1,4 @@
-package com.example.talkme.data.remote
+package com.samuel.talkme.data.remote
 
 import okhttp3.OkHttpClient
 import okhttp3.logging.HttpLoggingInterceptor
